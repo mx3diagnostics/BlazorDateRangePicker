@@ -13,6 +13,8 @@ window.clickAndPositionHandler = {
         });
     },
     getPickerPosition: function (elementId, parentId, drops, opens, skipAddListener) {
+        return;
+
         var resizeFunction = function () {
             window.clickAndPositionHandler.getPickerPosition(elementId, parentId, drops, opens, true);
         };
@@ -115,7 +117,7 @@ window.clickAndPositionHandler = {
                 }, container);
             } else {
                 setStylesOnElement({
-                    position: 'fixed',
+                    position: 'absolute',
                     top: containerTop + 'px',
                     left: containerLeft + 'px',
                     right: 'auto'
