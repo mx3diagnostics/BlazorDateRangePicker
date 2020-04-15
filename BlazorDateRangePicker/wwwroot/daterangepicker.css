@@ -1,5 +1,6 @@
 ﻿.daterangepicker-container {
-  position: relative; }
+  position: relative;
+  background: #fff; }
 
 .daterangepicker-value-container {
   display: flex;
@@ -9,6 +10,8 @@
   border-width: 1px; }
   .daterangepicker-value-container input {
     border: 0 !important; }
+    .daterangepicker-value-container input::-ms-clear {
+      display: none; }
 
 .daterangepicker {
   position: absolute;

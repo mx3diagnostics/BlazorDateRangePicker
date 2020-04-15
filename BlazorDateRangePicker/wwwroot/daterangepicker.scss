@@ -1,5 +1,6 @@
 .daterangepicker-container {
     position: relative;
+    background: #fff;
 }
 
 .daterangepicker-value-container {
@@ -9,7 +10,13 @@
     border-style: solid;
     border-width: 1px;
 
-    input { border: 0 !important; }
+    input {
+        border: 0 !important;
+
+        &::-ms-clear {
+            display: none;
+        }
+    }
 }
 
 .daterangepicker {
