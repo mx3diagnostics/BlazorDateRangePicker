@@ -1,15 +1,19 @@
 ﻿.daterangepicker-container {
-  position: relative;
-  background: #fff; }
+  position: relative; }
 
 .daterangepicker-value-container {
   display: flex;
   border-color: #ccc;
   border-radius: 4px;
   border-style: solid;
-  border-width: 1px; }
+  border-width: 1px;
+  background: #fff; }
   .daterangepicker-value-container input {
-    border: 0 !important; }
+    border: 0 !important;
+    background: transparent; }
+    .daterangepicker-value-container input[type=text] {
+      min-height: 36px;
+      padding: 7px; }
     .daterangepicker-value-container input::-ms-clear {
       display: none; }
 
