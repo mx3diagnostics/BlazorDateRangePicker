@@ -12,7 +12,7 @@
         <div class="daterangepicker-value-container">
             <input id="@ParentId" type="text" @attributes="CombinedAttributes" value="@FormattedRange" @oninput="OnTextInput" @onfocusin="Open" @onfocusout="LostFocus" />
 
-            @if (HasValue)
+            @if (HasValue && AllowClear)
             {
                 <button type="button"
                         class="typeahead-clear-indicator typeahead-indicator"
@@ -119,6 +119,9 @@
 
     [Parameter]
     public RenderFragment<DateRangePicker> PickerTemplate { get; set; }
+
+    [Parameter]
+    public bool AllowClear { get; set; } = true;
 
     private CalendarType LeftCalendar { get; set; }
     private CalendarType RightCalendar { get; set; }
